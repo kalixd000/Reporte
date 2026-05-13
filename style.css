@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+div1{
+    text-align: center;
+    font-size: 2rem;
+}
+body{
+    line-height: 1.7;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    margin: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200xp;
+    margin: 0 auto;
+    background-color: #77777777;
+    color: #ffff;
+    text-align: center;
+    padding: 1rem;
+}
+.logo{
+    font-size: 2.5rem;
+    font-weight: 350;
+    color: rgb(51, 36, 36);
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #333;
+     font-weight: 350;
+}
+footer{
+    background-color: #333;
+    color: #ffff;
+    text-align: center;
+    padding: 1rem;
+}
+@media screen and (max-width: 430px) {
+  nav {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+}
+.Subtema{
+    font-size: 2rem;
+    text-align: center;
+}
+p2{
+    font-size: 1.2rem;
+}
