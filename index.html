@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-MX">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    header>
+    <header>
         <nav>
             <div class="logo">Reporte</div>
             <ul class="nav-links">
@@ -17,13 +20,191 @@
             </ul>
         </nav>
     </header>
-    <div1>
-        <h3 class="Subtema">Experiencias Personales</h3>
-        <img src="" alt="">
-    </div1>
+<div>
+    <img class="ig" src="https://raw.githubusercontent.com/kalixd000/Reporte/main/cecytebc_vertical.png">
+</div>
+    <div class="contenedor">
+        <p class="person">
+            <br><br>COLEGIO DE ESTUDIOS CIENTÍFICOS Y TECNOLÓGICOS DE BAJA CALIFORNIA
+        </p>
+        <p class="person">
+            PLANTEL PLAYAS DE TIJUANA<br><br>
+        </p>
+        <p class="f">
+            Reporte ROBOTIX FAIRE 25-26<br><br>
+        </p>
+        <p class="xr">
+            INCLUSEM<br><br>
+        </p>
+        <p class="l">
+            PRESENTA:<br><br>
+        </p>
+        <p class="person">
+            CARBAJAL DÍAZ, MARLENE YOLANDA<br>
+            BELTRÁN ROMO, JOVANI<br>
+            VILLAZANA VIZCARRA, BRYAN ISAAC<br>
+            BARRETO GARCÍA, JUVAL ALEJANDRO<br>
+            TRUJILLO ROMERO, DANIELA KALINA<br>
+            AYALA AMAYA, DIEGO ARMANDO<br>
+            GRUPO:
+        </p>
+        <p class="l">
+            4APGM<br><br><br><br><br><br>
+        </p>
+        <p>
+        TIJUANA BC 12 DE MAYO DE 2026<br><br><br><br><br><br>
+        </p>
 
-<footer>
+        <p class="introduccion">
+            ÍNDICE<br><br>
+        </p>
+
+        <p class="r">
+
+            OBJETIVO.<br>
+            FUNDAMENTO<br>
+            TEÓRICO.<br>
+            MATERIAL Y EQUIPO<br>
+            PROCEDIMIENTO.<br>
+            ESQUEMA DEL CIRCUITO<br>
+            RESULTADOS Y MEDICIONES<br>
+            ANÁLISIS Y
+            DISCUSIÓN<br>
+            CONCLUSIÓN.<br>
+
+        </p>
+        <p class="introduccion">
+            Objetivo:<br><br>
+        </p>
+        <p>
+            El objetivo de este proyecto es construir un circuito para un sistema de cruce inteligente llamado Inclusem
+            que incluye dos semáforos integrados: uno vial con tres luces y uno peatonal con dos luces. Buscamos
+            automatizar el sistema para que, cuando el semáforo vial esté en verde y el sensor ultrasónico detecte a una
+            persona en el área de espera, la bocina del semáforo peatonal pite fuerte; si el semáforo vial pasa a
+            amarillo, el pitido disminuya su volumen como advertencia suave; y si cambia a rojo, el sistema no emita
+            sonido porque el peatón puede pasar seguro.<br><br>
+        </p>
+        <p class="introduccion">
+            Fundamento teórico<br><br>
+        </p>
+        <p>
+            Este proyecto junta dos semáforos en un mismo circuito controlado por una tarjeta programable que sincroniza
+            los tiempos de las luces vehiculares y peatonales. El sistema lee de forma continua la información de un
+            sensor ultrasónico para saber si hay un peatón presente en la zona de cruce.<br>
+            El sensor ultrasónico funciona
+            mandando ondas de sonido que rebotan en los objetos. Al detectar que una persona se encuentra parada en su
+            área de cobertura, el sensor le avisa a la tarjeta de control.<br>
+            La tarjeta no cambia el ritmo del pitido por
+            la distancia del peatón, sino que cambia la intensidad del volumen según el color del semáforo vial.
+            Mientras el usuario esté en el área de detección, el sistema generará un pitido fuerte si los carros tienen
+            el paso (luz verde vial), un pitido suave si están por detenerse (luz amarilla vial), o un silencio total si
+            los carros ya se pararon por completo (luz roja vial), avisando de forma clara cuándo es seguro bajar de la
+            acera.<br><br>
+        </p>
+        <p class="introduccion">
+            Material y equipo<br><br>
+        </p>
+        <p>
+            • 1 Tarjeta Arduino Uno (el cerebro del circuito)<br>
+            • 1 Sensor de distancia ultrasónico (HC-SR04)<br>
+            • 1 Zumbador o
+            bocina pequeña (Buzzer)<br>
+            • 3 Luces LED para el semáforo vial (Verde, Amarillo y Rojo)<br>
+            • 2 Luces LED para el
+            semáforo peatonal (Verde y Rojo)<br>
+            • 5 Resistencias (para proteger todos los LED del circuito)<br>
+            • 2 Tablillas de
+            conexiones (Protoboard)<br>
+            • Cables de diferentes colores para realizar las conexiones<br>
+            • 1 Batería de 9 voltios
+            con su adaptador<br><br>
+        </p>
+        <p class="introduccion">
+            Procedimiento<br><br>
+        </p>
+        <p>
+            1. Acomodamos la tarjeta Arduino y las dos tablillas protoboard en la mesa para empezar a armar los dos
+            semáforos.<br>
+            2. Conectamos los cables de voltaje y tierra desde el Arduino a las líneas laterales de las
+            tablillas para darles energía.<br>
+            3. Colocamos los 3 LED del semáforo vial (verde, amarillo y rojo) en un lado
+            de la tablilla, y los 2 LED del semáforo peatonal (verde y rojo) en el otro lado.<br>
+            4. Conectamos las patitas
+            largas de los 5 LED a diferentes salidas digitales del Arduino usando cables individuales, agregando una
+            resistencia en cada conexión para evitar que se quemen.<br>
+            5. Colocamos el sensor ultrasónico en la tablilla de
+            conexiones inferior y unimos sus pines de corriente a las líneas de energía positiva y negativa.<br>
+            6.
+            Conectamos los pines de señal (Trigger y Echo) del sensor ultrasónico hacia las entradas digitales
+            programadas en la tarjeta Arduino.<br>
+            7. Insertamos el zumbador en la tablilla y conectamos su cable positivo a
+            una salida de la tarjeta que permita regular la fuerza del sonido.<br>
+            8. Unimos las patitas cortas de todos los
+            LED y el cable negativo del zumbador a la línea de tierra común con cables negros.<br>
+            9. Conectamos la batería
+            de 9 voltios al Arduino para encender todo el sistema y revisar la sincronización de las luces y el
+            sonido.<br><br>
+        </p>
+        <p class="introduccion">
+            Esquema del circuito<br><br></p>
+        <div >
+            <img class="imagen" src="https://raw.githubusercontent.com/kalixd000/Modelo-3d-Circuito/main/cicuitoex.png">
+        </div>
+        <p class="introduccion">
+            <br><br>Resultados y mediciones<br><br>
+        </p>
+        <p>
+            Durante las pruebas de funcionamiento con el circuito de los dos semáforos encendido, registramos los
+            siguientes comportamientos cuando una persona se paraba en el área que cubre el sensor ultrasónico:<br><br>
+            • Caso 1
+            (Semáforo vial en Verde y Peatonal en Rojo): Al detectar la presencia de una persona en la zona del sensor,
+            el zumbador se activa de inmediato con un pitido fuerte y constante. La intensidad se mantiene igual durante
+            toda la luz verde para indicar que los carros están avanzando.<br>
+            • Caso 2 (Semáforo vial en Amarillo y Peatonal
+            en Rojo): Al cambiar el semáforo vial a amarillo con la persona aún en la zona del sensor, el circuito
+            ajusta la energía de la bocina haciendo que el pitido suene mucho más suavecito, funcionando como un aviso
+            de precaución.<br>
+            • Caso 3 (Semáforo vial en Rojo y Peatonal en Verde): Cuando el semáforo vial cambia a rojo,
+            el sonido se apaga por completo. El semáforo peatonal enciende su luz verde, confirmando de manera
+            silenciosa que es seguro cruzar la calle.<br>
+            • Rendimiento eléctrico: Todo el circuito funcionó de manera
+            continua y estable con la batería de 9 voltios, respondiendo al instante ante la presencia del
+            usuario.<br><br>
+        </p>
+        <p class="introduccion">
+            Análisi y discución<br><br>
+        </p>
+        <p>
+        El circuito trabajó de manera correcta al coordinar los dos semáforos con el sensor ultrasónico. El uso del
+        sensor fue una solución efectiva para asegurar que el semáforo peatonal solo emita alertas sonoras cuando
+        realmente hay un peatón esperando en la esquina, evitando generar ruido innecesario en la vía pública.<br>
+        La parte
+        que más se nos complicó como equipo fue armar la maqueta de los semáforos. Como ninguno de nosotros tenía
+        experiencia haciendo trabajos manuales o técnicos de este tipo, al principio nos dio un poco de desconfianza.
+        Sin embargo, nos organizamos para que todos ayudáramos en lo que podíamos y así pudimos terminarla.<br>
+        En la sección
+        electrónica, nos enfocamos en calibrar los códigos del Arduino para asegurar que la diferencia de volumen entre
+        la luz verde vial y la luz amarilla vial fuera bien clara para el usuario, logrando que el pitido en amarillo se
+        escuchara mucho más suave y no tan fuerte como en la fase verde.<br><br>
+        </p>
+        <p class="introduccion">
+            Conclusión<br><br>
+        </p>
+        <p>
+            Con este proyecto logramos terminar con éxito el diseño y el armado del semáforo Inclusem. El circuito de
+            dos semáforos controlados por el sensor funciona bien y demuestra ser una propuesta muy útil para mejorar la
+            seguridad en las esquinas, ayudando a que las personas que no ven bien o que van distraídas sepan
+            exactamente cuándo deben quedarse en la acera.<br>
+            Hacer este proyecto fue todo un reto porque tuvimos que
+            organizarnos entre las tareas y los trabajos de las otras materias de la escuela. A veces nos sentimos un
+            poco cansados o estresados por el tiempo, pero ver el resultado final nos hace sentir muy orgullosos de lo
+            que logramos juntos. Aprendimos mucho sobre electrónica, pero sobre todo aprendimos a trabajar en equipo, a
+            apoyarnos cuando algo no nos salía y a tener paciencia para resolver los problemas.<br><br>
+        </p>
+        
+        <footer>
         <p>&copy; Cecyte Playas de Tijuana. Todos los derechos reservados</p>
     </footer>
 </body>
+
 </html>

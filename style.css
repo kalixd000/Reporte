@@ -5,9 +5,19 @@
     font-family: 'Times New Roman', Times, serif;
 
 }
-div1{
-    text-align: center;
-    font-size: 2rem;
+p{
+    font-size: 1.1rem;
+     padding: 1rem 2rem;
+}
+.xddd{
+    font-size: 1.1rem;
+}
+.subb{
+    font-size: 1.2rem;
+    font-style: inherit;
+}
+img{
+    background-position: right;
 }
 body{
     line-height: 1.7;
@@ -62,10 +72,79 @@ footer{
     gap: 1rem;
   }
 }
-.Subtema{
-    font-size: 2rem;
+.x{
+   font-size: 1.4rem;
+    font-style: oblique;
+    text-decoration: underline;
+        text-align: justify;
+        padding: 1rem 2rem;
+
+}
+.xd{
+    font-size: 1.1rem;
+        text-align: justify;
+        padding: 1rem 2rem;
+
+}
+.introduccion{
+    font-size: 1.4rem;
+    font-style: oblique;
+    font-weight: bold;
+        text-align: justify;
+        padding: 1rem 2rem;
+
+}
+.subtema{
+    font-size: 1.4rem;
+    font-style: oblique;
+    text-align: justify;
+    padding: 1rem 2rem;
+}
+.tema{
+    font-size: 1.4rem;
+    font-weight: bold;
     text-align: center;
 }
-p2{
-    font-size: 1.2rem;
+.person{
+    font-size: 1.1rem;
+    text-align: center;
+}
+.l{
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: bold;
+}
+.f{
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: bold;
+}
+.xr{
+    font-size: 1.4rem;
+    font-style: oblique;
+    text-decoration: underline;
+    text-align: center;
+}
+.contenedor{
+    position: relative;
+}
+.ig{
+     padding: 4rem 2rem;
+ margin: 0 auto;
+width: 350;
+    height: 300px;  
+ object-fit: cover;
+}
+
+.imagen{
+     padding: 4rem 2rem;
+ margin: 0 auto;
+    width: 700px;
+    height: 100%;
+ object-fit: cover;
+}
+.r{
+    font-size: 1.1rem;
+     padding: 1rem 2rem;
+     text-align: justify;
 }
