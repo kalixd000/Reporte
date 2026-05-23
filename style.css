@@ -150,11 +150,7 @@ width: 350;
      padding: 1rem 2rem;
      text-align: justify;
 }
-ol{
-    padding: 1rem 2rem;
-}
-a{
-    color: inherit;
-    text-decoration: underline;
-
+a {
+    color: inherit;  
+     padding: 1rem 2rem; 
 }
